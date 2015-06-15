@@ -25,7 +25,7 @@ if (isset($_GET['q'])) {
     $ret = json_decode($response, true);
     //temperature
     if (strpos($kitty, 'temperature')) {
-        echo $ret['main']['temp'];
+        echo $ret['main']['temp'].' C';
     }
     //humidity
     if (strpos($kitty, 'humidity')) {

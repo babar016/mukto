@@ -1,4 +1,5 @@
 <?php
+    echo 'hudao';
     $kitty = '';
     if(isset ($_GET['greetings'])){
         $kitty = $_GET['greetings'];

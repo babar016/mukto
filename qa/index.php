@@ -21,7 +21,7 @@ if (isset($_GET['q'])) {
     $tokens = explode("?", $tokens[count($tokens) - 1]);
     $city = $tokens[0];
     $request = 'http://api.openweathermap.org/data/2.5/weather?q=' . $city . '&cnt=7&units=metric';
-    echo $response = file_get_contents($request);
+    $response = file_get_contents($request);
     $ret = json_decode($response, true);
     //temperature
     if (strpos($kitty, 'temperature')) {
